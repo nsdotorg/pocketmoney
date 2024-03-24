@@ -64,6 +64,7 @@ export default function Login() {
       <div className="absolute w-[45rem] h-[45rem] rounded-full bg-[#6bff95] -bottom-[6rem] -right-[5rem] z-0"></div>
       <div className="absolute w-[35rem] h-[35rem] rounded-full bg-[#ffe33f] -bottom-[9rem] -right-[5rem] z-0"></div>
 
+      {/* layout to ask user to enter logic password when the user has registered via logic password */}
       {logicPassword && !magicPassword && (
         <div>
           <p className="font-medium text-lg pt-4 text-center relative z-10">
@@ -85,6 +86,7 @@ export default function Login() {
         </div>
       )}
 
+      {/* layout to ask user to solve a math problem when the user has registered via magic password */}
       {!logicPassword && magicPassword && (
         <div>
           <p className="font-medium text-lg pt-4 text-center relative z-10">
